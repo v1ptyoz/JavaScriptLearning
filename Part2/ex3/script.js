@@ -28,8 +28,7 @@ function chooseExpenses() {
     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
         b = +prompt("Во сколько обойдется?", "");
   
-    if (typeof(a) != null && typeof(b) != null
-        && a != "" && b != "" && a.length < 50) {
+    if (typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
       appData.expenses[a] = b;
     } else {
       --i;
@@ -51,7 +50,7 @@ chooseExpenses();
 function detectDayBudget() {
   appData.moneyPerDay = (appData.money / 30).toFixed();
   alert("Ваш бюджет на 1 день равен " + appData.moneyPerDay);
-  detectLevel()
+  detectLevel();
 }
 
 function detectLevel() {
@@ -66,7 +65,7 @@ function detectLevel() {
   }
 }
 
-detectDayBudget()
+detectDayBudget();
 
 
 function checkSavings() {
