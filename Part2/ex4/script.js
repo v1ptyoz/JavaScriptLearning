@@ -37,7 +37,7 @@ let appData = {
   detectDayBudget: function() {
     appData.moneyPerDay = (appData.money / 30).toFixed();
     alert("Ваш бюджет на 1 день равен " + appData.moneyPerDay);
-    detectLevel();
+    appData.detectLevel();
   },
   detectLevel: function() {
     if (appData.moneyPerDay < 100) {
