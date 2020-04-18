@@ -91,3 +91,5 @@ for (let key in appData) {
   console.log(key);
 }
 
+console.log(null || 2 && 3 || 4);
+
